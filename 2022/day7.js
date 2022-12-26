@@ -989,7 +989,7 @@ for (var line of data) {
 	}
 }
 
-// Task 1
+// Part 1
 var result = Object.values(dirs).reduce((total, dirSize) => {
 	if (dirSize <= 100000) {
 		return total + dirSize;
@@ -999,7 +999,7 @@ var result = Object.values(dirs).reduce((total, dirSize) => {
 }, 0);
 console.log(result);
 
-// Task 2
+// Part 2
 result = Object.values(dirs)
 			.sort((a, b) => (a - b))
 			.find((dirSize) => ((70000000 - dirs['/'] + dirSize) >= 30000000));
